@@ -5,3 +5,5 @@
 .. Add sections as items in this list.
 .. toctree::
    :maxdepth: 2
+
+   license

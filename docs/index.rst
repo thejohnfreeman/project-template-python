@@ -7,3 +7,6 @@
    :maxdepth: 2
 
    license
+   dependencies
+   scripts
+   testing

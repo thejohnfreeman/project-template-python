@@ -7,7 +7,7 @@ html :
 
 lint :
 	mypy ${PACKAGE}* tests
-	pylint ${PACKAGE} tests
+	pylint --jobs $(shell nproc) ${PACKAGE} tests
 	pydocstyle ${PACKAGE} tests
 
 serve :

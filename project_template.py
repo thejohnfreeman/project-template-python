@@ -1,5 +1,8 @@
-"""The standard greeting
+"""A trivial module."""
 
->>> assert greeting == 'hello'
-"""
-greeting = 'hello'
+def greeting() -> str:
+    """The standard greeting.
+
+    >>> assert greeting() == 'hello'
+    """
+    return 'hello'

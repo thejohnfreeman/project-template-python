@@ -1,4 +1,6 @@
+"""A trivial test."""
+
 from project_template import greeting
 
 def test_greeting():
-    assert greeting == 'hello'
+    assert greeting() == 'hello'

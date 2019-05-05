@@ -3,6 +3,7 @@ python:
   - 3.6
 install:
   - pip install poetry
+  - poetry install
 script:
-  - make lint
-  - make test
+  - poetry run make lint
+  - poetry run make test

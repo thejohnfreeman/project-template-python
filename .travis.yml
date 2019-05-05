@@ -1,6 +1,8 @@
 language: python
+dist: xenial
 python:
-  - 3.7
+  - 3.6-dev
+  - 3.7-dev
 install:
   - pip install poetry
   - poetry install

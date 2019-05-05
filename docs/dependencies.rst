@@ -58,7 +58,7 @@ mypy_             Type-checking.
 pylint_           Static analysis and `PEP 8`_ (code style) conformance.
 pydocstyle_       `PEP 257`_ (docstring style) conformance.
 yapf_             Formatting code.
-pytest_           :ref:`Testing`.
+pytest_           :ref:`Testing <Tests>`.
 pytest-cov_       Code coverage.
 sphinx_           :ref:`Documentation`.
 sphinx-autobuild_ Fast iterations on documentation.

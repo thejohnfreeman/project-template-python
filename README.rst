@@ -32,7 +32,7 @@ answering:
 .. _Yeoman: https://yeoman.io/
 .. _documentation: https://project-template-python.readthedocs.io/
 
-.. [#] With the exception of some additions. Most notably, the content of this
-   documentation is not generated (but its boilerplate is).
+.. [#] With the exception of a few additions. Most notably, the content of
+   this documentation is not generated (but its boilerplate is).
 
 .. end-include

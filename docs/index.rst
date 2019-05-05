@@ -9,4 +9,5 @@
    license
    dependencies
    scripts
-   testing
+   code
+   tests

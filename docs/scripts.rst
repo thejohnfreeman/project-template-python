@@ -1,3 +1,5 @@
+.. _scripts:
+
 =======
 Scripts
 =======
@@ -16,7 +18,8 @@ The default Makefile has a few targets:
 ====== ====
 Target Task
 ====== ====
-lint   Run the linters_: style checkers, type checker, and static analyzers.
+lint   Run the :ref:`linters <code_quality>`: style checkers, type checker,
+       and static analyzers.
 test   Run the tests (including doctests_) with coverage.
 html   Build the documentation in HTML.
 serve  Launch a server for the HTML documentation that, whenever a change is
@@ -25,3 +28,19 @@ serve  Launch a server for the HTML documentation that, whenever a change is
 
 .. _linters: https://en.wikipedia.org/wiki/Lint_(software)
 .. _doctests: https://pymotw.com/2/doctest/
+
+.. note::
+
+   The scripts assume they are running in the virtual environment of the
+   project. You should invoke them like this:
+
+   .. code-block:: shell
+
+      $ poetry run make <target>
+
+   Alternatively, if you want every command to conveniently execute in the
+   virtual environment, then you can start a shell in that environment:
+
+   .. code-block:: shell
+
+      $ poetry run $SHELL

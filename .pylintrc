@@ -1,5 +1,5 @@
 [BASIC]
-# Let us skip docstrings on short functions.
+# Let us omit docstrings for short functions.
 docstring-min-length = 4
 # Let us name parameters of function type ``f`` and type parameters ``T``.
 good-names = f,T

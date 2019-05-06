@@ -11,3 +11,4 @@
    scripts
    code
    tests
+   continuous_integration

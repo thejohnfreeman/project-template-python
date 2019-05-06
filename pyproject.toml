@@ -13,6 +13,9 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.6-dev"
+sphinx = {version = "^1.8",extras = ["docs"]}
+sphinx_rtd_theme = {version = "^0.4.3",extras = ["docs"]}
+toml = {version = "^0.10.0",extras = ["docs"]}
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.701.0"

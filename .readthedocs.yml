@@ -1,13 +1,7 @@
-version: 2
-formats:
-  - pdf
-  - epub
 build:
   image: latest
 python:
   version: 3.6
-  install:
-    - method: pip
-      path: .
-      extra_requirements:
-        - docs
+  pip_install: true
+  extra_requirements:
+    - docs

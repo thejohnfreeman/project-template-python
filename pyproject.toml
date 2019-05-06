@@ -7,9 +7,12 @@ documentation = "https://project-template-python.readthedocs.io/"
 repository = "https://github.com/thejohnfreeman/project-template-python/"
 readme = "README.rst"
 license = "ISC"
+packages = [
+  { include = "project_template.py" },
+]
 
 [tool.poetry.dependencies]
-python = "^3.6.8"
+python = "^3.6-dev"
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.701.0"

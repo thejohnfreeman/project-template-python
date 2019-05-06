@@ -8,7 +8,7 @@ The generator chooses pytest_ for the testing framework. All you have to do to
 get started is add test modules in the ``tests`` `🔗`__ package.
 Separately, you can write small tests in function docstrings using doctests_.
 All of these tests are executed as part of the ``test`` :ref:`script
-<scripts>`. It will print coverage as part of its report:
+<scripts>`. The report includes coverage:
 
 .. _pytest: https://docs.pytest.org/
 .. __: https://github.com/thejohnfreeman/project-template-python/blob/master/tests

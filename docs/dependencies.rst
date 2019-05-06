@@ -4,22 +4,46 @@ Dependencies
 
 This project manages dependencies through ``pyproject.toml`` `🔗`__, a Python
 package metadata file working its way to standardization through `PEP 518`_.
-Right now, the premier tool for managing that file is Poetry_. The generator_
-requires you to have Poetry installed and has instructions_ in its
-documentation for installing it.
+``pyproject.toml`` stands to replace a growing, redundant, confusing set of
+configuration files: ``setup.py``, ``requirements.txt``, ``setup.cfg``,
+``MANIFEST.in``, and ``Pipfile``.
 
 .. __: https://github.com/thejohnfreeman/project-template-python/blob/master/pyproject.toml
 .. _PEP 518: https://www.python.org/dev/peps/pep-0518/
-.. _Poetry: https://github.com/sdispater/poetry#introduction
-.. _generator: https://github.com/thejohnfreeman/generator-python
-.. _instructions: https://github.com/thejohnfreeman/generator-python#install
 
 .. highlight:: shell
+
+Poetry
+------
+
+Right now, the premier tool for managing ``pyproject.toml`` is Poetry_. The
+generator requires you to have Poetry installed and has instructions_ in its
+documentation for installing it.
+
+.. _Poetry: https://github.com/sdispater/poetry#introduction
+.. _instructions: https://github.com/thejohnfreeman/generator-python#install
 
 If you're familiar with npm_ or Yarn_, Poetry works much the same way.
 Poetry will create a virtual environment for your project and install your
 project's dependencies there, isolated from the virtual environments of other
 projects.
+
+By default, Poetry will create your virtual environment underneath a cache
+directory in your home directory, ``$HOME/.cache/pypoetry/virtualenvs``. You
+can find this directory by checking your Poetry configuration::
+
+   $ poetry config settings.virtualenvs.path
+
+You can configure Poetry to create the virtual environment in your project
+directory, if you want::
+
+   $ poetry config settings.virtualenvs.in-project true
+
+The in-project virtual environment directory will be named ``.venv``.
+
+Managing dependencies
+---------------------
+
 When you run the generator, it will install the starting dependencies, but if
 you clone this project, you must install them yourself::
 
@@ -45,8 +69,8 @@ package repositories or how to search for specific versions, consult the
 .. __: https://poetry.eustace.io/docs/basic-usage/
 
 
-Pre-installed dependencies
---------------------------
+Default dependencies
+--------------------
 
 By default, the generator does not install any required dependencies, but it
 does install a set of development dependencies, explained here.

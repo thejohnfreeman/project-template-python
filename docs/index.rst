@@ -4,6 +4,7 @@
 
 .. Add sections as items in this list.
 .. toctree::
+   :hidden:
    :maxdepth: 2
 
    license

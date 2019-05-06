@@ -1,6 +1,6 @@
 language: python
 
-install: &install
+install:
   - pip3 install poetry
   - poetry install
 
@@ -24,11 +24,3 @@ matrix:
       osx_image: xcode10.2
       # `language: python` tries to install Python, which fails on OSX.
       language: shell
-    - os: osx
-      # `xcode9.4` has Python 3.6.5.
-      osx_image: xcode9.4
-      language: shell
-      install:
-        # `nproc` is in `coreutils`.
-        - brew install coreutils
-        - *install

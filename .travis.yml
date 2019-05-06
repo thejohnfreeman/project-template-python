@@ -13,33 +13,54 @@ matrix:
       python: 3.8-dev
     - os: osx
       osx_image: xcode10.2
+      # `language: python` tries to install Python, which fails on OSX.
+      language: shell
+      install:
       script: python --version
     - os: osx
       osx_image: xcode10.1
+      language: shell
+      install:
       script: python --version
     - os: osx
       osx_image: xcode10
+      language: shell
+      install:
       script: python --version
     - os: osx
       osx_image: xcode9.4
+      language: shell
+      install:
       script: python --version
     - os: osx
       osx_image: xcode9.3
+      language: shell
+      install:
       script: python --version
     - os: osx
       osx_image: xcode9.2
+      language: shell
+      install:
       script: python --version
     - os: osx
       osx_image: xcode9.1
+      language: shell
+      install:
       script: python --version
     - os: osx
       osx_image: xcode9
+      language: shell
+      install:
       script: python --version
     - os: osx
       osx_image: xcode8.3
+      language: shell
+      install:
       script: python --version
     - os: osx
       osx_image: xcode8
+      language: shell
+      install:
       script: python --version
 
 install:

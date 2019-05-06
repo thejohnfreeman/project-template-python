@@ -1,5 +1,13 @@
 language: python
 
+install: &install
+  - pip3 install poetry
+  - poetry install
+
+script:
+  - poetry run make lint
+  - poetry run make test
+
 matrix:
   include:
     - os: linux
@@ -20,11 +28,7 @@ matrix:
       # `xcode9.4` has Python 3.6.5.
       osx_image: xcode9.4
       language: shell
-
-install:
-  - pip3 install poetry
-  - poetry install
-
-script:
-  - poetry run make lint
-  - poetry run make test
+      install:
+        # `nproc` is in `coreutils`.
+        - brew install coreutils
+        - *install

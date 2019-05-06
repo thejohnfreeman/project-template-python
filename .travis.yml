@@ -12,11 +12,35 @@ matrix:
       dist: xenial
       python: 3.8-dev
     - os: osx
-      python: 3.6-dev
+      osx_image: xcode10.2
+      script: python --version
     - os: osx
-      python: 3.7-dev
+      osx_image: xcode10.1
+      script: python --version
     - os: osx
-      python: 3.8-dev
+      osx_image: xcode10
+      script: python --version
+    - os: osx
+      osx_image: xcode9.4
+      script: python --version
+    - os: osx
+      osx_image: xcode9.3
+      script: python --version
+    - os: osx
+      osx_image: xcode9.2
+      script: python --version
+    - os: osx
+      osx_image: xcode9.1
+      script: python --version
+    - os: osx
+      osx_image: xcode9
+      script: python --version
+    - os: osx
+      osx_image: xcode8.3
+      script: python --version
+    - os: osx
+      osx_image: xcode8
+      script: python --version
 
 install:
   - pip install poetry

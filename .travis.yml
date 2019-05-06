@@ -12,69 +12,17 @@ matrix:
       dist: xenial
       python: 3.8-dev
     - os: osx
+      # `xcode10.2` has Python 3.7.3.
       osx_image: xcode10.2
       # `language: python` tries to install Python, which fails on OSX.
       language: shell
-      install:
-      script:
-        - pip3 install poetry
-        - poetry --version
-        - poetry install
-        - poetry run make lint
-        - poetry run make test
     - os: osx
-      osx_image: xcode10.2
-      language: shell
-      install:
-      script: python3 --version
-    - os: osx
-      osx_image: xcode10.1
-      language: shell
-      install:
-      script: python3 --version
-    - os: osx
-      osx_image: xcode10
-      language: shell
-      install:
-      script: python3 --version
-    - os: osx
+      # `xcode9.4` has Python 3.6.5.
       osx_image: xcode9.4
       language: shell
-      install:
-      script: python3 --version
-    - os: osx
-      osx_image: xcode9.3
-      language: shell
-      install:
-      script: python3 --version
-    - os: osx
-      osx_image: xcode9.2
-      language: shell
-      install:
-      script: python3 --version
-    - os: osx
-      osx_image: xcode9.1
-      language: shell
-      install:
-      script: python3 --version
-    - os: osx
-      osx_image: xcode9
-      language: shell
-      install:
-      script: python3 --version
-    - os: osx
-      osx_image: xcode8.3
-      language: shell
-      install:
-      script: python3 --version
-    - os: osx
-      osx_image: xcode8
-      language: shell
-      install:
-      script: python3 --version
 
 install:
-  - pip install poetry
+  - pip3 install poetry
   - poetry install
 
 script:

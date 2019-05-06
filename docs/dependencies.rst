@@ -13,6 +13,7 @@ configuration files: ``setup.py``, ``requirements.txt``, ``setup.cfg``,
 
 .. highlight:: shell
 
+
 Poetry
 ------
 
@@ -40,6 +41,7 @@ directory, if you want::
    $ poetry config settings.virtualenvs.in-project true
 
 The in-project virtual environment directory will be named ``.venv``.
+
 
 Managing dependencies
 ---------------------

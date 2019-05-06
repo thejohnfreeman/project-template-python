@@ -13,3 +13,4 @@
    code
    tests
    continuous_integration
+   documentation

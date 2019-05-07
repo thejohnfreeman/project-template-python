@@ -11,7 +11,7 @@ without language deemed unnecessary following the Berne Convention.
 
 If you want a different license, just drop it into the file ``LICENSE`` `🔗`__
 and edit the ``license`` setting in ``pyproject.toml`` `🔗`__. If you don't
-know what license you want, step through the wizard at choosealicense.com_.
+know what license you want, the wizard at choosealicense.com_ can help you.
 
 .. __: https://github.com/thejohnfreeman/project-template-python/blob/master/LICENSE
 .. __: https://github.com/thejohnfreeman/project-template-python/blob/master/pyproject.toml

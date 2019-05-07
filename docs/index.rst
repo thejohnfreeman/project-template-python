@@ -14,3 +14,4 @@
    tests
    continuous_integration
    documentation
+   package

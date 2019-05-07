@@ -45,4 +45,4 @@ serve  Launch a server for the HTML documentation that, whenever a change is
 
    .. code-block:: shell
 
-      $ poetry run $SHELL
+      $ poetry shell

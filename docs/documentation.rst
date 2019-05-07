@@ -60,3 +60,18 @@ refresh your browser:
 .. code-block:: shell
 
    $ poetry run make serve
+
+
+Publishing
+----------
+
+When you're ready to publish your documentation on Read the Docs, follow these
+steps:
+
+- `Log in`__ to Read the Docs with your GitHub credentials.
+- `Import` your project repository. (You may likely need to refresh the list.)
+- Click "Build version" for the first build. Subsequent builds are
+  automatically triggered when you push to GitHub.
+
+  .. __: https://readthedocs.org/
+  .. __: https://readthedocs.org/dashboard/import/

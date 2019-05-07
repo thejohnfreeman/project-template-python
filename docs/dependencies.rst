@@ -4,9 +4,9 @@ Dependencies
 
 This project manages dependencies through ``pyproject.toml`` `🔗`__, a Python
 package metadata file working its way to standardization through `PEP 518`_.
-``pyproject.toml`` stands to replace a growing, redundant, confusing set of
-configuration files: ``setup.py``, ``requirements.txt``, ``setup.cfg``,
-``MANIFEST.in``, and ``Pipfile``.
+``pyproject.toml`` stands to replace a growing set of redundant, confusing,
+non-standard configuration files: ``setup.py``, ``requirements.txt``,
+``setup.cfg``, ``MANIFEST.in``, and ``Pipfile``.
 
 .. __: https://github.com/thejohnfreeman/project-template-python/blob/master/pyproject.toml
 .. _PEP 518: https://www.python.org/dev/peps/pep-0518/

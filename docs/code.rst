@@ -2,9 +2,9 @@
 Code
 ====
 
-The generator does not create any code for you. You'll need to choose between
-a single-file module or a package directory and add them yourself. The tests
-directory will be created for you, but you'll need to add the first test.
+The generator does not write any code for you, but it will generate an empty
+package or module based on your choice. The tests directory will be created
+for you, but you'll need to add the first test.
 
 This sample project has a single-file module (``project_template.py`` `🔗`__)
 and one test (``test_greeting.py`` `🔗`__).

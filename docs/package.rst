@@ -3,11 +3,11 @@ Package
 =======
 
 Once you're done testing and documenting your project, you may want to package
-and distribute it. Poetry can help you upload a package to the `Python Package
-Index (PyPI)`_. You only get one shot to publish a specific version on PyPI,
-however. If you make a mistake, you have to publish a new version. That's why
-they made a `TestPyPI`_ where you can overwrite a version until you get it
-right.
+and distribute it so that other people can install, import, and use it. Poetry
+can help you upload a package to the `Python Package Index (PyPI)`_. You only
+get one shot to publish a specific version on PyPI, however. If you make
+a mistake, you have to publish a new version. That's why they made
+a `TestPyPI`_ where you can overwrite a version until you get it right.
 
 .. _Python Package Index (PyPI): https://pypi.org/
 .. _TestPyPI: https://test.pypi.org/

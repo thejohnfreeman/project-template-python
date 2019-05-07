@@ -56,7 +56,7 @@ package as a dependency, import it, and test it. If you use Poetry to manage
 that project, you'll need to add TestPyPI as a source in its
 ``pyproject.toml``:
 
-.. code-block:: toml
+.. code-block:: yaml
 
    [[tool.poetry.source]]
    name = "testpypi"

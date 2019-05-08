@@ -81,16 +81,19 @@ development tasks should be easy:
 Tangentially, I spent a bunch of time on the documentation walking through
 each feature and explaining it from the ground up so that a newcomer can
 understand.
-At the very least, this project should leave them with a solid understanding
-of one set of best practices.
+I want the documentation to leave users with no unanswered questions.
+That means if you have a question, then the documentation is incomplete!
+Please `let me know`__ so that I can fill any gaps.
+
+.. __: https://github.com/thejohnfreeman/project-template-python/issues/new
 
 
 Why did you choose X?
 ---------------------
 
 This project makes choices for each of its features, and there are bound to be
-people who do not like them or understand them. The documentation_ tries to
-explain each individual choice, but I will outline here the general
+people who do not like them or understand them. The rest of the documentation_
+tries to explain each individual choice, but I will outline here the general
 philosophy.
 
 For dependency management and packaging, there is one tool emerging that
@@ -125,7 +128,7 @@ Please remember that each choice is the result of a significant investment of
 my time in researching alternatives.
 I have not yet documented why I chose *against* the ones that I did, but I am
 open to having that discussion (and I would like to link back to those
-discussions from a "graveyard" chapter in the docs).
+discussions from a "graveyard" chapter in the documentation).
 
 .. _issues: https://github.com/thejohnfreeman/project-template-python/issues
 

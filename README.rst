@@ -27,14 +27,17 @@ a number of features, each with its own chapter in the documentation_:
 .. _Yeoman: https://yeoman.io/
 .. _documentation: https://project-template-python.readthedocs.io/
 
-- ISC_ license
+- ISC_ license (a shorter MIT license)
 - All package metadata in ``pyproject.toml``
   (reaching standardization in `PEP 518`_)
-- Scripts for common development tasks (linting, testing, building
-  documentation)
+- Scripts for common development tasks
+  (linting, testing, building documentation)
 - Testing with pytest_, doctests_, and coverage
 - Continuous integration on Linux and OSX with `Travis CI`_
 - Documentation with Sphinx_ and `Read the Docs`_
+
+.. Once #1 is done, add Windows to the CI bullet.
+.. Once #2 is done, add "cross-platform" to the scripts bullet.
 
 .. _ISC: https://tldrlegal.com/license/-isc-license
 .. _PEP 518: https://www.python.org/dev/peps/pep-0518/
@@ -43,6 +46,89 @@ a number of features, each with its own chapter in the documentation_:
 .. _Travis CI: https://travis-ci.org/
 .. _Sphinx: https://www.sphinx-doc.org/
 .. _Read the Docs: https://docs.readthedocs.io/
+
+
+Why?
+----
+
+Imagine you're working on a Python project, and you take a detour to write
+a subpackage or submodule with some useful functions or a clever abstraction.
+This package depends on nothing else in your project; it can actually be
+a dependency of your project. It might be useful in some of your other
+projects, or it might be useful to other people in their projects. You would
+like to extract that package into its own project (while following best
+practices for directory structure, code style, tests, documentation, and
+continuous integration) that you can quickly and easily package and share
+through the `Python Package Index (PyPI)`__.
+
+.. __: https://pypi.org
+
+I consider this use case representative of the vast majority: an all-Python
+library that you want to share with yourself and others on PyPI. Common
+development tasks should be easy:
+
+- running tests (`across multiple versions of Python TBD`__);
+- running a suite of state-of-the-art static analyses
+  (including style checkers);
+- building and publishing documentation (using the most common extensions);
+- continuous integration on the big three platforms (`Windows TBD`__); and
+- publishing to PyPI
+  (even without knowing the intricacies of Python packaging).
+
+.. __: https://github.com/thejohnfreeman/project-template-python/issues/3
+.. __: https://github.com/thejohnfreeman/project-template-python/issues/1
+
+Tangentially, I spent a bunch of time on the documentation walking through
+each feature and explaining it from the ground up so that a newcomer can
+understand.
+At the very least, this project should leave them with a solid understanding
+of one set of best practices.
+
+
+Why did you choose X?
+---------------------
+
+This project makes choices for each of its features, and there are bound to be
+people who do not like them or understand them. The documentation_ tries to
+explain each individual choice, but I will outline here the general
+philosophy.
+
+For dependency management and packaging, there is one tool emerging that
+both
+
+1. offers a good user experience to the point that you might never need
+   to manually edit your package metadata file or learn the history__ and
+   pain__ of Python packaging, and
+2. uses a single, *standard* (`PEP 518`_) package metadata file
+   (``pyproject.toml``).
+
+.. __: https://www.pypa.io/en/latest/history/
+.. __: https://www.youtube.com/watch?v=AQsZsgJ30AE
+.. _PEP 518: https://www.python.org/dev/peps/pep-0518/
+
+That tool is Poetry_. Shout to Pipenv_ for leading the way on the first point,
+but in my opinion it has been overtaken.
+
+.. _Poetry: https://github.com/sdispater/poetry#introduction
+.. _Pipenv: https://docs.pipenv.org/en/latest/
+
+For the rest of the tools (style checkers, static analyzers, test, docs, CI),
+I have tried to choose the most popular, battle-tested solutions.
+As the landscape changes, this project will change with it.
+
+
+Why didn't you choose Y?
+------------------------
+
+If you think I've made an error, please let me know in the issues_.
+Please remember that each choice is the result of a significant investment of
+my time in researching alternatives.
+I have not yet documented why I chose *against* the ones that I did, but I am
+open to having that discussion (and I would like to link back to those
+discussions from a "graveyard" chapter in the docs).
+
+.. _issues: https://github.com/thejohnfreeman/project-template-python/issues
+
 
 .. [#] With the exception of a few additions. Most notably, the content of
    this documentation is not generated (but its boilerplate is).

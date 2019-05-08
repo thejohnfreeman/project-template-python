@@ -1,5 +1,3 @@
-.PHONY : html lint test serve
-
 PACKAGE := project_template
 
 html :
@@ -15,3 +13,7 @@ serve :
 
 test :
 	pytest --cov=${PACKAGE} --doctest-modules --ignore=docs
+
+.PHONY : html lint test serve
+
+.DEFAULT_GOAL :=

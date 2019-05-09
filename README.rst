@@ -6,7 +6,11 @@ project_template
 
 .. image:: https://travis-ci.org/thejohnfreeman/project-template-python.svg?branch=master
    :target: https://travis-ci.org/thejohnfreeman/project-template-python
-   :alt: Build status
+   :alt: Build status: Linux and OSX
+
+.. image:: https://ci.appveyor.com/api/projects/status/github/thejohnfreeman/project-template-python?branch=master&svg=true
+   :target: https://ci.appveyor.com/project/thejohnfreeman/project-template-python
+   :alt: Build status: Windows
 
 .. image:: https://readthedocs.org/projects/project-template-python/badge/?version=latest
    :target: https://project-template-python.readthedocs.io/
@@ -34,6 +38,7 @@ a number of features, each with its own chapter in the documentation_:
   (linting, testing, building documentation)
 - Testing with pytest_, doctests_, and coverage
 - Continuous integration on Linux and OSX with `Travis CI`_
+  and Windows with `AppVeyor`_
 - Documentation with Sphinx_ and `Read the Docs`_
 
 .. Once #1 is done, add Windows to the CI bullet.
@@ -44,6 +49,7 @@ a number of features, each with its own chapter in the documentation_:
 .. _pytest: https://docs.pytest.org/
 .. _doctests: https://pymotw.com/2/doctest/
 .. _Travis CI: https://travis-ci.org/
+.. _AppVeyor: https://www.appveyor.com/
 .. _Sphinx: https://www.sphinx-doc.org/
 .. _Read the Docs: https://docs.readthedocs.io/
 

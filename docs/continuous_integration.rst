@@ -3,12 +3,20 @@ Continuous Integration
 ======================
 
 Continuous integration is the name for automatically executing your tests when
-you push changes to your software. The generator includes a configuration file
-for the `Travis CI`_ continuous integration platform. It will test your
-software on Linux and OSX across Python versions from your minimum supported
-to the latest 3.8.
+you push changes to your software. The generator generates configuration files
+for the `Travis CI`_ and `AppVeyor`_ continuous integration platforms, and
+includes their status badges for the project in the README_.
 
 .. _Travis CI: https://travis-ci.org/
+.. _AppVeyor: https://www.appveyor.com/
+.. _README: https://raw.githubusercontent.com/thejohnfreeman/project-template-python/master/README.rst
+
+
+Travis CI
+---------
+
+Travis CI will test your software on Linux and OSX across Python versions 3.6,
+3.7, and 3.8, excluding those less than your minimum supported.
 
 .. note::
 
@@ -22,7 +30,7 @@ to the latest 3.8.
    .. __: https://travis-ci.org/thejohnfreeman/project-template-python/jobs/528949377
    .. _nproc: http://man7.org/linux/man-pages/man1/nproc.1.html
 
-To set up CI for your project, you'll need to:
+To set up Travis CI for your project, you'll need to:
 
 - `Grant access`__ to the Travis CI application for your account or
   organization. This will let Travis CI add hooks and mark commits with the
@@ -35,6 +43,21 @@ To set up CI for your project, you'll need to:
 .. __: https://travis-ci.org/
 .. __: https://travis-ci.org/account/repositories
 
-The generator includes the Travis CI badge for your project in the README_.
 
-.. _README: https://raw.githubusercontent.com/thejohnfreeman/project-template-python/master/README.rst
+AppVeyor
+--------
+
+AppVeyor will test your software on Windows for Python versions 3.6 and 3.7,
+excluding those less than your minimum supported.
+
+To set up AppVeyor for your project, you'll need to:
+
+- `Log in`__ to AppVeyor with your GitHub credentials.
+- `Grant access`__ to AppVeyor for the project you want to test. This will let
+  AppVeyor add hooks and mark commits with the status of your builds.
+- `Add the project`__ on AppVeyor. This will create a hook on GitHub to notify
+  AppVeyor whenever you push to your repository.
+
+.. __: https://ci.appveyor.com/
+.. __: https://ci.appveyor.com/account/thejohnfreeman/projects/new
+.. __: https://ci.appveyor.com/account/thejohnfreeman/projects/new

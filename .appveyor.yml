@@ -1,13 +1,29 @@
 environment:
   matrix:
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      ARCH: x86
+      PYTHON: "C:\\Python36"
+      PYTHON_ARCH: "32"
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      ARCH: x86_64
+      PYTHON: "C:\\Python36"
+      PYTHON_ARCH: "64"
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      ARCH: x86
+      PYTHON: "C:\\Python36"
+      PYTHON_ARCH: "32"
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      ARCH: x86_64
+      PYTHON: "C:\\Python36"
+      PYTHON_ARCH: "64"
 
 install:
   - set PATH=%PATH%;%PYTHON%/Scripts/
   - ps: |
-      $ErrorActionPreference = "Stop"
-      pip.exe --disable-pip-version-check install poetry
+      $ErrorActionPreference = "Continue"
+      python --version
+      pip --version
+      pip --disable-pip-version-check install poetry
       poetry install
 
 test_script:

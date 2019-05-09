@@ -1,5 +1,6 @@
 """A trivial module."""
 
+
 def greeting() -> str:
     """The standard greeting.
 

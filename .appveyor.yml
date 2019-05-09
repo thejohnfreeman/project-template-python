@@ -21,9 +21,10 @@ install:
   - set PATH=%PYTHON%/Scripts/;%PATH%
   - ps: |
       $ErrorActionPreference = "Continue"
-      python --version
-      pip --version
-      pip --disable-pip-version-check install poetry
+      dir "%PYTHON%/Scripts/"
+      python.exe --version
+      pip.exe --version
+      pip.exe --disable-pip-version-check install poetry
       poetry install
 
 test_script:

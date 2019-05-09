@@ -30,7 +30,7 @@ a number of features, each with its own chapter in the documentation_:
 - ISC_ license (a shorter MIT license)
 - All package metadata in ``pyproject.toml``
   (reaching standardization in `PEP 518`_)
-- Scripts for common development tasks
+- Cross-platform scripts for common development tasks
   (linting, testing, building documentation)
 - Testing with pytest_, doctests_, and coverage
 - Continuous integration on Linux and OSX with `Travis CI`_

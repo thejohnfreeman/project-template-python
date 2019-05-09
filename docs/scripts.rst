@@ -2,18 +2,29 @@
 Scripts
 =======
 
-This project includes a Makefile to approximate the convenience of `npm
+This project includes an "Invokefile" to approximate the convenience of `npm
 scripts`_, at least until such scripts `make their way`_ into
 ``pyproject.toml``.
-Using a Makefile for common tasks like running tests, formatting code, or
+By Invokefile, I'm talking about a ``tasks.py`` script for the Invoke_ tool.
+Using Invoke for common tasks like running tests, formatting code, or
 building the documentation relieves us from having to memorize and recite the
-command lines or from keeping around a bunch of small shell scripts. Makefile
-targets give us short, easily-remembered names for these tasks.
+command lines or from keeping around a bunch of small shell scripts.
+Invoke tasks give us short, easily-remembered names for these functions.
 
 .. _npm scripts: https://medium.freecodecamp.org/introduction-to-npm-scripts-1dbb2ae01633
 .. _make their way: https://github.com/sdispater/poetry/pull/591
+.. _Invoke: https://www.pyinvoke.org/
 
-The default Makefile has a few targets:
+Previously, this project used a Makefile for scripts. Make has the advantage
+that it is included by default on most Linuxes and OSX, and that it is more
+well known than Invoke, but I switched to Invoke because it is cross-platform,
+just like Python. The :doc:`continuous integration <continuous_integration>`
+scripts use Invoke to run the tests to ensure that (1) the tests are run the
+same way on every platform and that (2) the Invokefile is written correctly.
+
+The `default Invokefile`__ has a few tasks:
+
+.. __: https://github.com/thejohnfreeman/project-template-python/blob/master/tasks.py
 
 ====== ====
 Target Task
@@ -36,7 +47,7 @@ serve  Launch a server for the HTML documentation that, whenever a change is
 
    .. code-block:: shell
 
-      $ poetry run make <target>
+      $ poetry run invoke <task>
 
    Alternatively, if you want every command to conveniently execute in the
    virtual environment, then you can start a shell in that environment:

@@ -19,6 +19,7 @@ toml = {version = "^0.10.0",optional = true}
 docs = ["sphinx", "sphinx_rtd_theme", "toml"]
 
 [tool.poetry.dev-dependencies]
+invoke = "^1.2"
 mypy = "^0.701.0"
 pydocstyle = "^3.0"
 pylint = "^2.3"

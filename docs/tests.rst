@@ -14,7 +14,7 @@ All of these tests are executed as part of the ``test`` :doc:`script
 
 .. code-block:: shell
 
-   $ poetry run make test
+   $ poetry run invoke test
    pytest --cov=project_template --doctest-modules --ignore=docs
    ============================= test session starts =============================
    platform linux -- Python 3.6.8, pytest-4.4.1, py-1.8.0, pluggy-0.9.0

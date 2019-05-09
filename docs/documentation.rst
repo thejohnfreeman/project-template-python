@@ -59,7 +59,7 @@ refresh your browser:
 
 .. code-block:: shell
 
-   $ poetry run make serve
+   $ poetry run invoke serve
 
 
 Publishing

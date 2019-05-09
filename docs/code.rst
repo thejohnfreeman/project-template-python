@@ -23,7 +23,7 @@ All of these are executed with the ``lint`` :doc:`script <scripts>`:
 
 .. code-block:: shell
 
-   $ poetry run make lint
+   $ poetry run invoke lint
 
 =========== ======
 Tool        Reason

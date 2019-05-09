@@ -6,7 +6,7 @@ environment:
       PYTHON_ARCH: "32"
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       ARCH: x86_64
-      PYTHON: "C:\\Python36"
+      PYTHON: "C:\\Python36-x64"
       PYTHON_ARCH: "64"
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       ARCH: x86
@@ -14,17 +14,20 @@ environment:
       PYTHON_ARCH: "32"
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       ARCH: x86_64
-      PYTHON: "C:\\Python36"
+      PYTHON: "C:\\Python36-x64"
       PYTHON_ARCH: "64"
 
+build: off
+
 install:
-  - set PATH=%PYTHON%/Scripts/;%PATH%
   - ps: |
       $ErrorActionPreference = "Continue"
-      dir "%PYTHON%/Scripts/"
-      python.exe --version
-      pip.exe --version
-      pip.exe --disable-pip-version-check install poetry
+      $env:PATH = "$env:PYTHON\Scripts\;$env:PATH"
+      echo "$env:PATH"
+      dir "$env:PYTHON\Scripts\"
+      python --version
+      pip --version
+      pip --disable-pip-version-check install poetry
       poetry install
 
 test_script:

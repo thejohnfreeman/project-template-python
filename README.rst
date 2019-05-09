@@ -80,7 +80,6 @@ development tasks should be easy:
   (even without knowing the intricacies of Python packaging).
 
 .. __: https://github.com/thejohnfreeman/project-template-python/issues/3
-.. __: https://github.com/thejohnfreeman/project-template-python/issues/1
 
 Tangentially, I spent a bunch of time on the documentation walking through
 each feature and explaining it from the ground up so that a newcomer can

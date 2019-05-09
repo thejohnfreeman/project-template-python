@@ -1,5 +1,3 @@
-.. _tests:
-
 =====
 Tests
 =====
@@ -7,7 +5,7 @@ Tests
 The generator chooses pytest_ for the testing framework. All you have to do to
 get started is add test modules in the ``tests`` `🔗`__ package.
 Separately, you can write small tests in function docstrings using doctests_.
-All of these tests are executed as part of the ``test`` :ref:`script
+All of these tests are executed as part of the ``test`` :doc:`script
 <scripts>`. The report includes coverage:
 
 .. _pytest: https://docs.pytest.org/

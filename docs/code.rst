@@ -19,7 +19,7 @@ Quality
 -------
 
 There are a few tools installed to help you maintain high code quality.
-All of these are executed with the ``lint`` :ref:`script <scripts>`:
+All of these are executed with the ``lint`` :doc:`script <scripts>`:
 
 .. code-block:: shell
 

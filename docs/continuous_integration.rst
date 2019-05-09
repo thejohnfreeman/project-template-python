@@ -16,7 +16,7 @@ to the latest 3.8.
    Python 3.8. While Homebrew is available, trying to update the package list
    seems to fail__ (or return a spurious non-zero status), which I have not
    yet investigated. For the same reason, it is impossible to install nproc_
-   (used by the lint :ref:`script <scripts>`) on the OSX image that has Python
+   (used by the lint :doc:`script <scripts>`) on the OSX image that has Python
    3.6.
 
    .. __: https://travis-ci.org/thejohnfreeman/project-template-python/jobs/528949377

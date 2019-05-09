@@ -41,9 +41,6 @@ a number of features, each with its own chapter in the documentation_:
   and Windows with `AppVeyor`_
 - Documentation with Sphinx_ and `Read the Docs`_
 
-.. Once #1 is done, add Windows to the CI bullet.
-.. Once #2 is done, add "cross-platform" to the scripts bullet.
-
 .. _ISC: https://tldrlegal.com/license/-isc-license
 .. _PEP 518: https://www.python.org/dev/peps/pep-0518/
 .. _pytest: https://docs.pytest.org/
@@ -77,7 +74,8 @@ development tasks should be easy:
 - running a suite of state-of-the-art static analyses
   (including style checkers);
 - building and publishing documentation (using the most common extensions);
-- continuous integration on the big three platforms (`Windows TBD`__); and
+- continuous integration on the big three platforms (Linux, OSX, and Windows);
+  and
 - publishing to PyPI
   (even without knowing the intricacies of Python packaging).
 

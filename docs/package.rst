@@ -23,13 +23,20 @@ for both.
 
 Check that Poetry already knows about the TestPyPI repository::
 
-   $ poetry config repositories.test.url
-   repositories.test.url = "https://test.pypi.org/legacy/"
+   $ poetry config repositories.test
+   {'url': 'https://test.pypi.org/legacy/'}
+
+
+If it doesn't, you can add_ it::
+
+   $ poetry config repositories.test https://test.pypi.org/legacy/
+
+.. _add: https://python-poetry.org/docs/repositories/#using-a-private-repository
 
 Give Poetry your credentials for both of your accounts::
 
-   $ poetry config http-basic.pypi <username> <password>
-   $ poetry config http-basic.test <username> <password>
+   $ poetry config http-basic.pypi ${username} ${password}
+   $ poetry config http-basic.test ${username} ${password}
 
 
 Publishing

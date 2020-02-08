@@ -37,7 +37,7 @@ install:
       $ErrorActionPreference = "Stop"
       $env:PATH = "$env:PYTHON;$env:PYTHON\Scripts;$env:PATH"
       cmd /c curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
-      $env:PATH = "$env:HOME\.poetry\bin;$env:PATH"
+      $env:PATH = "$env:USERPROFILE\.poetry\bin;$env:PATH"
       poetry install
 
 test_script:
